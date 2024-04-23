@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Button, StyleSheet, View} from 'react-native';
 import {Counter1} from './src/Counter1';
 import {Counter2} from './src/Counter2';
+import {CounterView} from './src/CounterView';
 
 export interface AppProps {}
 
@@ -11,6 +12,7 @@ export const App: React.FC<AppProps> = () => {
     <View style={styles.container}>
       {current === 1 ? <Counter1 /> : <Counter2 />}
       <View style={styles.switch}>
+        <CounterView />
         <Button
           title="Switch"
           onPress={() => {

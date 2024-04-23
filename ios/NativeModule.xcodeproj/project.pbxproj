@@ -11,6 +11,10 @@
 		067C17F12BD7F47600C8AC38 /* RCTCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F02BD7F47600C8AC38 /* RCTCounter.m */; };
 		067C17F42BD802B900C8AC38 /* RCTCounterV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */; };
 		067C17F72BD804D400C8AC38 /* RCTCounterV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F62BD804D400C8AC38 /* RCTCounterV2.m */; };
+		067C18092BD8380100C8AC38 /* CounterViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C18082BD8380100C8AC38 /* CounterViewManager.swift */; };
+		067C180B2BD8386A00C8AC38 /* CounterViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C180A2BD8386A00C8AC38 /* CounterViewManager.m */; };
+		067C180D2BD839FD00C8AC38 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C180C2BD839FD00C8AC38 /* CounterView.swift */; };
+		067C180F2BD83F2900C8AC38 /* CounterViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C180E2BD83F2900C8AC38 /* CounterViewProxy.swift */; };
 		0C80B921A6F3F58F76C31292 /* libPods-NativeModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-NativeModule.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -38,6 +42,10 @@
 		067C17F22BD802B800C8AC38 /* NativeModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeModule-Bridging-Header.h"; sourceTree = "<group>"; };
 		067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTCounterV2.swift; sourceTree = "<group>"; };
 		067C17F62BD804D400C8AC38 /* RCTCounterV2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCounterV2.m; sourceTree = "<group>"; };
+		067C18082BD8380100C8AC38 /* CounterViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewManager.swift; sourceTree = "<group>"; };
+		067C180A2BD8386A00C8AC38 /* CounterViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterViewManager.m; sourceTree = "<group>"; };
+		067C180C2BD839FD00C8AC38 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		067C180E2BD83F2900C8AC38 /* CounterViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewProxy.swift; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NativeModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NativeModule/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = NativeModule/AppDelegate.mm; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 				067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */,
 				067C17F22BD802B800C8AC38 /* NativeModule-Bridging-Header.h */,
 				067C17F62BD804D400C8AC38 /* RCTCounterV2.m */,
+				067C18082BD8380100C8AC38 /* CounterViewManager.swift */,
+				067C180A2BD8386A00C8AC38 /* CounterViewManager.m */,
+				067C180C2BD839FD00C8AC38 /* CounterView.swift */,
+				067C180E2BD83F2900C8AC38 /* CounterViewProxy.swift */,
 			);
 			name = NativeModule;
 			sourceTree = "<group>";
@@ -408,10 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				067C17F12BD7F47600C8AC38 /* RCTCounter.m in Sources */,
+				067C18092BD8380100C8AC38 /* CounterViewManager.swift in Sources */,
+				067C180B2BD8386A00C8AC38 /* CounterViewManager.m in Sources */,
+				067C180F2BD83F2900C8AC38 /* CounterViewProxy.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				067C17F42BD802B900C8AC38 /* RCTCounterV2.swift in Sources */,
 				067C17F72BD804D400C8AC38 /* RCTCounterV2.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				067C180D2BD839FD00C8AC38 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
