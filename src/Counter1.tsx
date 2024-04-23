@@ -11,7 +11,7 @@ export const Counter1: React.FC<Counter1Props> = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Counter using ObjC</Text>
+      <Text style={styles.title}>Counter using ObjC</Text>
       <Text style={styles.counter}>{counter}</Text>
       <Text style={styles.error}>{error}</Text>
       <Button
@@ -61,6 +61,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 16,
   },
   counter: {
     fontWeight: 'bold',
