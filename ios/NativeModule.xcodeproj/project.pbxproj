@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* NativeModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NativeModuleTests.m */; };
 		067C17F12BD7F47600C8AC38 /* RCTCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F02BD7F47600C8AC38 /* RCTCounter.m */; };
+		067C17F42BD802B900C8AC38 /* RCTCounterV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */; };
+		067C17F72BD804D400C8AC38 /* RCTCounterV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C17F62BD804D400C8AC38 /* RCTCounterV2.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-NativeModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-NativeModule.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -33,6 +35,9 @@
 		00E356F21AD99517003FC87E /* NativeModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeModuleTests.m; sourceTree = "<group>"; };
 		067C17EF2BD7F41200C8AC38 /* RCTCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCounter.h; sourceTree = "<group>"; };
 		067C17F02BD7F47600C8AC38 /* RCTCounter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCounter.m; sourceTree = "<group>"; };
+		067C17F22BD802B800C8AC38 /* NativeModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeModule-Bridging-Header.h"; sourceTree = "<group>"; };
+		067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTCounterV2.swift; sourceTree = "<group>"; };
+		067C17F62BD804D400C8AC38 /* RCTCounterV2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCounterV2.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NativeModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NativeModule/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = NativeModule/AppDelegate.mm; sourceTree = "<group>"; };
@@ -99,6 +104,9 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				067C17EF2BD7F41200C8AC38 /* RCTCounter.h */,
 				067C17F02BD7F47600C8AC38 /* RCTCounter.m */,
+				067C17F32BD802B900C8AC38 /* RCTCounterV2.swift */,
+				067C17F22BD802B800C8AC38 /* NativeModule-Bridging-Header.h */,
+				067C17F62BD804D400C8AC38 /* RCTCounterV2.m */,
 			);
 			name = NativeModule;
 			sourceTree = "<group>";
@@ -213,7 +221,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -401,6 +409,8 @@
 			files = (
 				067C17F12BD7F47600C8AC38 /* RCTCounter.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				067C17F42BD802B900C8AC38 /* RCTCounterV2.swift in Sources */,
+				067C17F72BD804D400C8AC38 /* RCTCounterV2.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-NativeModule-NativeModuleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -447,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-NativeModule-NativeModuleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeModuleTests/Info.plist;
@@ -488,6 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModule;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModule-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -514,6 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModule;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModule-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
